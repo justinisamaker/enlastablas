@@ -1,5 +1,8 @@
 ### Node ###
 
+# Generated CSS files
+css/*
+
 # Logs
 logs
 npm-debug.log*
