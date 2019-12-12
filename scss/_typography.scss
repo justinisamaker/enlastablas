@@ -3,6 +3,12 @@
    - All font declarations and mixins
    ========================================================================== */
 
+@mixin open-sans() {
+  font-family: "Open Sans", Helvetica, Arial, Verdana, sans-serif;
+  font-weight: 400;
+  line-height: 1em;
+}
+
 @mixin body-copy() {
   font-family: Helvetica, Arial, Verdana, sans-serif;
   line-height: 1.2em;
