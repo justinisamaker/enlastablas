@@ -1,0 +1,19 @@
+{
+  "name": "adobo",
+  "version": "1.0.0",
+  "description": "Custom theme for En las Tablas",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/justinisamaker/enlastablas.git"
+  },
+  "author": "Justin Smith",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/justinisamaker/enlastablas/issues"
+  },
+  "homepage": "https://github.com/justinisamaker/enlastablas#readme"
+}
