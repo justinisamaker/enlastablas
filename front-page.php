@@ -12,15 +12,19 @@
 
     <section id="homepage-box-links">
       <div class="box-link">
-        <h3>Our story</h3>
-        <div class="divider"></div>
+        <div class="box-link-title">
+          <h3>Our story</h3>
+          <div class="divider"></div>
+        </div>
         <p>Providing affordable access to culturally diverse performing arts classes since 2006.</p>
         <a href="<?php bloginfo('url'); ?>/our-story" class="btn btn-white">Learn more</a>
       </div>
 
       <div class="box-link">
-        <h3>Support<br/>En Las Tablas</h3>
-        <div class="divider"></div>
+        <div class="box-link-title">
+          <h3>Support<br/>En Las Tablas</h3>
+          <div class="divider"></div>
+        </div>
         <p>Help us meet our goals by donating money, goods, or time to the organization.</p>
         <a href="<?php bloginfo('url'); ?>/support-us" class="btn btn-white">Learn more</a>
       </div>

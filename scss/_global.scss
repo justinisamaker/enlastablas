@@ -7,7 +7,20 @@ $medium: 700px;
 $large: 1000px;
 $extra-large: 1200px;
 
-html, body, .container, #___gatsby, #gatsby-focus-wrapper{
-  width:100%;
-  overflow-x:hidden;
+html,
+body {
+  width: 100%;
+  overflow-x: hidden;
+}
+
+.divider {
+  display: block;
+  width: 35px;
+  height: 2px;
+  margin: 20px auto 25px auto;
+  background: #fff;
+
+  &.black {
+    background: #000;
+  }
 }
