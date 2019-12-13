@@ -1,0 +1,104 @@
+@import "../utils.scss";
+
+#class-listing-container {
+  width: 85%;
+  margin: 0 auto;
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-gap: 2em;
+}
+
+.class-listing {
+  height: 100%;
+
+  h2 {
+    color: $pink;
+    font-size: 1.5em;
+    line-height: 1em;
+    text-align: center;
+    font-weight: 700;
+  }
+}
+
+.inner {
+  border: 1px solid $gray1;
+  height: calc(100% - 4em);
+  padding: 2em;
+  overflow: hidden;
+
+  &:hover {
+    background: $yellow;
+    transition: background 0.1s linear;
+  }
+}
+
+.corner-ribbon {
+  width: 200px;
+  background: #e43;
+  position: absolute;
+  top: 30px;
+  right: -55px;
+  text-align: center;
+  line-height: 30px;
+  letter-spacing: 1px;
+  color: #f0f0f0;
+  transform: rotate(45deg);
+  background: $pink;
+  opacity: 0.7;
+}
+
+.class-category-icon {
+  width: 82px;
+  height: 82px;
+  display: block;
+  position: relative;
+  margin: 0 auto 20px auto;
+  background: url("../../img/class-category-icons.png") no-repeat top left;
+}
+
+.acting-icon {
+  background-position: 0 0 !important;
+  width: 82px;
+  height: 82px;
+}
+.ballet-icon {
+  background-position: 0 -132px !important;
+  width: 82px;
+  height: 81px;
+}
+.vocal-icon {
+  background-position: 0 -263px !important;
+  width: 82px;
+  height: 82px;
+}
+.writing-icon {
+  background-position: 0 -395px !important;
+  width: 82px;
+  height: 82px;
+}
+.dance-icon {
+  background-position: 0 -527px !important;
+  width: 82px;
+  height: 82px;
+}
+
+.class-info {
+  list-style: none;
+  padding: 0;
+  position: relative;
+  margin-top: 15px;
+
+  li {
+    text-align: center;
+    line-height: 1.6em;
+    color: $black;
+
+    &.class-category {
+      font-size: 1.4em;
+    }
+
+    &.small {
+      font-size: 0.8em;
+    }
+  }
+}
