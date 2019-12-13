@@ -9,11 +9,6 @@
   // Let WP handle the title tag
   add_theme_support( 'title-tag' );
 
-  // Custom Styles
-  function adobo_theme_styles(){
-    wp_enqueue_style( 'header_css', get_template_directory_uri().'/css/header.css');
-  }
-
   add_action( 'wp_enqueue_scripts', 'adobo_theme_styles' );
 
   // Register Menus
@@ -27,4 +22,16 @@
   }
 
   add_action('init', 'adobo_register_menus');
+
+  // Custom Styles
+  function adobo_theme_styles(){
+    wp_enqueue_style( 'header_css', get_template_directory_uri().'/css/header.css');
+
+    if(is_front_page()){
+      wp_enqueue_style( 'home_css',
+        get_template_directory_uri().'/css/home.css');
+    }
+  }
+
+
 ?>

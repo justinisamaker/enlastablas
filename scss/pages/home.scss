@@ -1,0 +1,19 @@
+@import "../utils.scss";
+
+#hero {
+  height: 22vh;
+  background-size: cover;
+  display: block;
+}
+
+.hero-bg-1 {
+  background: url("../../img/carousel-1.jpg") top center no-repeat !important;
+}
+
+.hero-bg-2 {
+  background: url("../../img/carousel-2.jpg") top center no-repeat !important;
+}
+
+.hero-bg-3 {
+  background: url("../../img/carousel-3.jpg") top center no-repeat !important;
+}
