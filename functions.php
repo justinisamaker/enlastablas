@@ -25,11 +25,13 @@
 
   // Custom Styles
   function adobo_theme_styles(){
-    wp_enqueue_style( 'header_css', get_template_directory_uri().'/css/header.css');
+    wp_enqueue_style( 'normalize_css', get_template_directory_uri().'/css/components/normalize.css');
+
+    wp_enqueue_style( 'header_css', get_template_directory_uri().'/css/components/header.css');
 
     if(is_front_page()){
       wp_enqueue_style( 'home_css',
-        get_template_directory_uri().'/css/home.css');
+        get_template_directory_uri().'/css/pages/home.css');
     }
   }
 

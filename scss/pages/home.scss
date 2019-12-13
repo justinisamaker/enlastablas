@@ -1,9 +1,10 @@
 @import "../utils.scss";
 
 #hero {
-  height: 22vh;
+  height: 30vh;
   background-size: cover;
   display: block;
+  background: $pink;
 }
 
 .hero-bg-1 {
