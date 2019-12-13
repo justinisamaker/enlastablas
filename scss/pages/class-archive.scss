@@ -25,10 +25,12 @@
   height: calc(100% - 4em);
   padding: 2em;
   overflow: hidden;
+  transition: all 0.1s linear;
 
   &:hover {
-    background: $yellow;
-    transition: background 0.1s linear;
+    background: $ivory;
+    border: 1px solid $pink;
+    transition: all 0.1s linear;
   }
 }
 
