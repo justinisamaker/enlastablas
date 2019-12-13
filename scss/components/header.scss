@@ -1,0 +1,62 @@
+@import "../utils.scss";
+
+#site-header {
+  padding: 1.5em 3em;
+  display: grid;
+  grid-template-columns: 30% 70%;
+  grid-template-rows: 1fr 1fr;
+  grid-template-areas:
+    "logo uppermenu"
+    "logo lowermenu";
+}
+
+#logo-container {
+  grid-area: logo;
+
+  h1 {
+    display: none;
+  }
+}
+
+#logo {
+  width: 100%;
+}
+
+#primary-menu-container {
+  grid-area: lowermenu;
+
+  ul {
+    float: right;
+  }
+
+  li {
+    display: inline-block;
+
+    a {
+      color: $white;
+      text-transform: uppercase;
+      letter-spacing: 1px;
+      padding: 0 0.5em;
+      font-size: 0.9em;
+      transition: color 0.1s ease-in-out;
+
+      &:hover {
+        color: $blue;
+        transition: color 0.1s ease-in-out;
+      }
+    }
+
+    &:last-child a {
+      padding-right: 0;
+    }
+  }
+}
+
+#header-donate {
+  grid-area: uppermenu;
+  width: auto;
+  font-size: 0.8em;
+  justify-self: end;
+  height: 15px;
+  padding: 0.8em 2em;
+}
