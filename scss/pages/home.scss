@@ -138,9 +138,11 @@
 /* EVENTS ===== */
 #events-social {
   padding: 40px;
+  width: 85%;
+  margin: 0 auto;
   display: grid;
   grid-template-columns: 1fr 1fr;
-  grid-gap: 5em;
+  grid-gap: 6em;
 }
 
 .events-social-section {
@@ -154,6 +156,7 @@
   ul {
     list-style: none;
     border-top: 1px solid $gray1;
+    padding: 0 1em;
 
     li {
       padding: 25px 0;

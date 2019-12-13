@@ -1,0 +1,130 @@
+@import "../utils.scss";
+
+#main-footer {
+  background: $darkGray;
+  padding-top: 50px;
+  padding-bottom: 120px;
+  margin-top: 60px;
+}
+
+#newsletter-signup {
+  width: 85%;
+  margin: 0 auto;
+  color: $white;
+  border-bottom: 1px solid $white;
+  padding: 20px 0;
+  margin-bottom: 20px;
+  font-size: 20px;
+
+  form {
+    display: grid;
+    grid-template-columns: 40% 45% 15%;
+  }
+
+  label,
+  input {
+    font-size: 0.9em;
+    text-transform: uppercase;
+    line-height: 1.3em;
+  }
+
+  label {
+    padding-top: 15px;
+  }
+
+  input[type="email"] {
+    @include no-appearance;
+    color: $black !important;
+    border: 0;
+    outline: 0;
+    border-right: 15px solid #2c2c2c;
+    padding-left: 20px;
+  }
+
+  input[type="submit"] {
+    @include no-appearance;
+    border: 0;
+    width: 100%;
+    height: 100%;
+    color: $white;
+
+    &:hover {
+      color: $black;
+    }
+  }
+}
+
+#footer-social {
+  width: 80%;
+  margin: 0 auto 10px auto;
+
+  li {
+    float: right;
+    width: 39px;
+    height: 39px;
+    display: block;
+  }
+  #footer-facebook {
+    margin-right: 15px;
+    a {
+      width: 39px;
+      height: 39px;
+      display: block;
+      border-radius: 20px;
+      &:hover {
+        background: $blue;
+      }
+    }
+  }
+  #footer-youtube {
+    a {
+      width: 39px;
+      height: 39px;
+      display: block;
+      border-radius: 20px;
+
+      &:hover {
+        background: $blue;
+      }
+    }
+  }
+}
+
+#footer-links {
+  padding-top: 40px;
+  width: 85%;
+  margin: 0 auto;
+
+  ul {
+    @include no-space;
+    list-style: none;
+    clear: both;
+
+    li {
+      float: left;
+      color: #fff;
+      border-right: 1px solid #fff;
+      margin-right: 10px;
+      padding-right: 10px;
+      font-size: 0.8em;
+
+      &:last-child {
+        border-right: 0;
+      }
+    }
+
+    a {
+      color: #fff;
+
+      &:visited {
+        color: #fff;
+      }
+    }
+  }
+
+  #copyright {
+    font-size: 0.8em;
+    float: right;
+    color: $white;
+  }
+}
