@@ -134,3 +134,56 @@
     margin-top: 30px;
   }
 }
+
+/* EVENTS ===== */
+#events-social {
+  padding: 40px;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-gap: 5em;
+}
+
+.events-social-section {
+  h3 {
+    text-align: center;
+    font-size: 2em;
+    font-weight: 700;
+    line-height: 1.3em;
+  }
+
+  ul {
+    list-style: none;
+    border-top: 1px solid $gray1;
+
+    li {
+      padding: 25px 0;
+    }
+  }
+
+  h5 {
+    text-transform: uppercase;
+    font-weight: 700;
+    letter-spacing: 0.1em;
+    font-size: 1em;
+    line-height: 1.3em;
+    margin-bottom: 3px;
+  }
+
+  h6 {
+    text-transform: uppercase;
+    font-style: italic;
+    font-size: 1em;
+    font-weight: 300;
+    line-height: 1.3em;
+    margin-bottom: 8px;
+  }
+
+  p {
+    line-height: 1.4em;
+    font-size: 1em;
+  }
+
+  .btn {
+    margin-top: 2em;
+  }
+}

@@ -49,9 +49,8 @@
     </section>
 
     <section id="events-social">
-      <div id="home-events" class="event-social-section">
+      <div id="home-events" class="events-social-section">
         <h3>UPCOMING EVENTS</h3>
-        <div class="divider"></div>
         <ul>
           <?php $loop = new WP_Query( array( 'post_type' => 'event', 'posts_per_page' => 2 ) ); ?>
           <?php while ( $loop->have_posts() ) : $loop->the_post(); ?>
@@ -74,14 +73,24 @@
           <?php endwhile; wp_reset_query(); ?>
         </ul>
       </div>
-    </section>
 
-    <section id="home-social" class="events-social-section">
+      <div id="home-donate" class="events-social-section">
+        <h3>DONATE NOW</h3>
+        <ul>
+          <li>
+            <h5>Make your sustaining gift today</h5>
+            <p>Your support makes all the difference to our students. Help keep the arts alive and well in Hermosa and beyond!</p>
+            <a href="https://www.paypal.com/cgi-bin/webscr?cmd=_s-xclick&amp;hosted_button_id=QQ6H937BJPATE" target="_blank" class="btn btn-yellow">Support a Student</a>
+          </li>
+        </ul>
+      </div>
+
+    <!-- <section id="home-social" class="events-social-section">
       <h3>FACEBOOK</h3>
       <div class="divider"></div>
       <div class="facebook-container">
         <?php echo do_shortcode('[custom-facebook-feed]'); ?>
       </div>
-    </section>
+    </section> -->
   </div>
 <?php get_footer(); ?>
