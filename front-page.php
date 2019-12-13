@@ -5,7 +5,7 @@
 ?>
 
 <?php get_header(); ?>
-  <div id="adobo-container">
+  <div id="home-container">
     <section id="hero" class="hero-bg-<?php echo rand(1, 3); ?>">
       <h2>Where artistic expression builds community connection</h2>
     </section>
