@@ -1,10 +1,10 @@
 @import "../utils.scss";
 
 #site-header {
-  padding: 2em 3em;
+  padding: 2em 5.5em;
   height: 90px;
-  width: 85%;
   margin: 0 auto;
+  background: $pink;
   border-bottom: 1px solid black;
   display: grid;
   grid-template-columns: 30% 70%;
@@ -12,6 +12,10 @@
   grid-template-areas:
     "logo uppermenu"
     "logo lowermenu";
+
+  .home & {
+    background: none;
+  }
 }
 
 #logo-container {
