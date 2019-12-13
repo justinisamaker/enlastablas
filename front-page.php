@@ -30,9 +30,9 @@
       </div>
     </section>
 
-    <div id="testimonials">
+    <section id="testimonials">
       <h3>WHAT THE PEOPLE SAY</h3>
-      <div class="divider"></div>
+      <div class="divider black"></div>
       <?php $loop = new WP_Query( array( 'post_type' => 'testimonial', 'orderby' => 'rand', 'posts_per_page' => 1 ) ); ?>
         <?php while ( $loop->have_posts() ) : $loop->the_post(); ?>
           <?php if( get_field('testimonial_quote') ): ?>
@@ -46,9 +46,9 @@
           </h6>
       <?php endwhile; wp_reset_query(); ?>
       <a href="<?php bloginfo('url'); ?>/testimonials" class="btn btn-black">See More</a>
-    </div>
+    </section>
 
-    <div id="events-social">
+    <section id="events-social">
       <div id="home-events" class="event-social-section">
         <h3>UPCOMING EVENTS</h3>
         <div class="divider"></div>
@@ -74,14 +74,14 @@
           <?php endwhile; wp_reset_query(); ?>
         </ul>
       </div>
-    </div>
+    </section>
 
-    <div id="home-social" class="events-social-section">
+    <section id="home-social" class="events-social-section">
       <h3>FACEBOOK</h3>
       <div class="divider"></div>
       <div class="facebook-container">
         <?php echo do_shortcode('[custom-facebook-feed]'); ?>
       </div>
-    </div>
+    </section>
   </div>
 <?php get_footer(); ?>
