@@ -62,23 +62,23 @@
     color: $pink;
     text-align: center;
     font-weight: normal;
-    margin: 0 auto;
+    margin: 0 auto 1em auto;
   }
 
   h6 {
     font-size: 16px;
     text-align: center;
     text-transform: uppercase;
-    margin-top: 20px;
     font-style: italic;
     font-weight: bold;
+    margin-bottom: 2em;
   }
 }
 
 #quote-button {
   background: $yellow;
   color: $white;
-  margin: 0 auto 5em auto;
+  margin: 0 auto 7em auto;
   font-size: 1em;
   width: 300px;
 
@@ -102,7 +102,7 @@
   h3 {
     font-weight: 700;
     font-size: 1.5em;
-    margin-top: 1em;
+    margin-top: 1.5em;
     text-transform: uppercase;
   }
 

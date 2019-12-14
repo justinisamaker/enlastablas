@@ -53,7 +53,7 @@
         <h3>UPCOMING EVENTS</h3>
         <ul>
           <?php $loop = new WP_Query( array( 'post_type' => 'event', 'posts_per_page' => 2 ) ); ?>
-          <?php while ( $loop->have_posts() ) : $loop->the_post(); ?>
+          <?php if ( $loop->have_posts() ) : while ( $loop->have_posts() ) : $loop->the_post(); ?>
             <li class="event">
               <h5><?php the_title(); ?></h5>
               <?php if(get_field('event_date')): ?>
@@ -70,7 +70,13 @@
               <?php endif; ?>
               <a href="<?php echo get_permalink(); ?>" class="btn btn-yellow">View Event</a>
             </li>
-          <?php endwhile; wp_reset_query(); ?>
+          <?php endwhile; ?>
+          <?php else: ?>
+            <li class="event">
+              <h5>No upcoming events</h5>
+            </li>
+          <?php endif; ?>
+          <?php wp_reset_query(); ?>
         </ul>
       </div>
 
