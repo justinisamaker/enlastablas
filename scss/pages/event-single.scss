@@ -99,3 +99,14 @@
     margin-top: 1em;
   }
 }
+
+/* MEDIA QUERIES ===== */
+@media only screen and (max-width: $large) {
+  #event-details {
+    grid-template-columns: 1fr;
+  }
+
+  #other-events-list {
+    grid-template-columns: 1fr;
+  }
+}
