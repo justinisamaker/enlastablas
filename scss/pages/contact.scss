@@ -1,0 +1,13 @@
+@import "../utils.scss";
+
+#contact-info {
+  width: 85%;
+  margin: 0 auto;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+
+  a {
+    height: 40px;
+    line-height: 1.3em;
+  }
+}

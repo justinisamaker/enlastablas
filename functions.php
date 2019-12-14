@@ -40,6 +40,8 @@
       wp_enqueue_style( 'our_story_css', get_template_directory_uri() . '/css/pages/our-story.css');
     } else if( is_page_template('page-support-us.php') ){
       wp_enqueue_style( 'support_us_css', get_template_directory_uri() . '/css/pages/support-us.css');
+    } else if( is_page_template('page-contact.php') ){
+      wp_enqueue_style( 'contact_css', get_template_directory_uri() . '/css/pages/contact.css');
     } else if( is_post_type_archive('event') ){
       wp_enqueue_style( 'event_archive_css', get_template_directory_uri() . '/css/pages/event-archive.css');
     }
