@@ -55,8 +55,8 @@
 }
 
 #footer-social {
-  width: 80%;
-  margin: 0 auto 10px auto;
+  width: 85%;
+  margin: 0 auto 1em auto;
 
   li {
     float: right;
@@ -93,7 +93,7 @@
 #footer-links {
   padding-top: 40px;
   width: 85%;
-  margin: 0 auto;
+  margin: 2.5em auto 0 auto;
 
   ul {
     @include no-space;
@@ -126,5 +126,48 @@
     font-size: 0.8em;
     float: right;
     color: $white;
+  }
+}
+
+/* MEDIA QUERIES ===== */
+@media only screen and (max-width: $large) {
+  #newsletter-signup {
+    form {
+      grid-template-rows: 1fr 1fr;
+      grid-template-columns: 70% 1fr;
+      grid-template-areas:
+        "label label"
+        "input submit";
+    }
+
+    label {
+      grid-area: label;
+    }
+
+    input[type="email"] {
+      grid-area: input;
+    }
+
+    input[type="submit"] {
+      grid-area: submit;
+    }
+  }
+}
+
+@media only screen and (max-width: $small) {
+  #footer-social {
+    width: 20%;
+    float: left;
+    margin-left: 7.5%;
+  }
+
+  #footer-links {
+    @include no-space;
+    float: left;
+    width: 60%;
+    margin-left: 10%;
+    display: grid;
+    grid-template-rows: 1fr 1fr;
+    grid-gap: 0.5em;
   }
 }
