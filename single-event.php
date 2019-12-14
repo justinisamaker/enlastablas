@@ -11,6 +11,7 @@
       <div id="event-info">
         <h1><?php the_title(); ?></h1>
         <h4><?php the_field('event_date'); ?><span class="info-divider"></span><?php the_field('event_start_time'); ?> - <?php the_field('event_end_time'); ?></h4>
+        <h4><?php the_field('event_location');?></h4>
 
         <?php if( get_field('event_description') ): ?>
           <p class="event-description"><?php the_field('event_description'); ?></p>
@@ -37,21 +38,6 @@
           <?php endif; ?>
           <?php if( get_field('event_location') ): ?>
             <a href="https://www.google.com/maps/place/<?php the_field('event_location'); ?>" target="_blank" class="btn btn-yellow">Get directions</a>
-          <?php endif; ?>
-
-          <?php if( get_field('event_location') ): ?>
-            <div class="map">
-              <?php
-
-              $location = get_field('event_location');
-
-              if( !empty($location) ):
-              ?>
-              <div class="acf-map">
-                <div class="marker" data-lat="<?php echo $location['lat']; ?>" data-lng="<?php echo $location['lng']; ?>"></div>
-              </div>
-              <?php endif; ?>
-            </div>
           <?php endif; ?>
         </section>
       <?php endif; ?>

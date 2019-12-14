@@ -38,8 +38,6 @@
 }
 
 #register-box {
-  border: 1px solid $gray1;
-  padding: 1em;
   margin-top: 3em;
 
   h2 {
@@ -56,6 +54,10 @@
     height: 200px;
     border: #ccc solid 1px;
     margin: 10px 0 0 0;
+  }
+
+  a {
+    margin-bottom: 1em;
   }
 }
 
