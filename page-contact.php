@@ -16,7 +16,7 @@
     <a href="mailto:enlastablas@sbcglobal.net" target="_blank" id="email-button" class="btn btn-yellow">Click here to<br/>e-mail En Las Tablas</a>
 
     <div id="map">
-      <script type="text/javascript" src="http://maps.google.com/maps/api/js?sensor=false"></script><div style="overflow:hidden;height:500px;width:100%;"><div id="gmap_canvas" style="height:500px;width:100%;"></div><style>#gmap_canvas img{max-width:none!important;background:none!important}</style></div><script type="text/javascript"> function init_map(){var myOptions = {zoom:18,center:new google.maps.LatLng(41.9168172,-87.7295436),mapTypeId: google.maps.MapTypeId.ROADMAP};map = new google.maps.Map(document.getElementById("gmap_canvas"), myOptions);marker = new google.maps.Marker({map: map,position: new google.maps.LatLng(41.9168172, -87.7295436)});infowindow = new google.maps.InfoWindow({content:"<b>En Las Tablas</b><br/>4111 W Armitage Ave<br/> Chicago" });google.maps.event.addListener(marker, "click", function(){infowindow.open(map,marker);});infowindow.open(map,marker);}google.maps.event.addDomListener(window, 'load', init_map);</script>
+      <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2968.8731538481193!2d-87.73173014877297!3d41.91708547911717!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x880fcd2280ad0547%3A0xf1503bf30f3a64c5!2sEn%20Las%20Tablas%20Performing%20Arts!5e0!3m2!1sen!2sus!4v1576360407712!5m2!1sen!2sus" width="600" height="450" frameborder="0" style="border:0;" allowfullscreen=""></iframe>
     </div>
   </div>
 </div>
