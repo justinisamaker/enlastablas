@@ -1,0 +1,128 @@
+@import "../utils.scss";
+
+#our-story-container {
+  text-align: center;
+
+  h2 {
+    font-size: 2em;
+    font-weight: 700;
+    text-transform: uppercase;
+    margin-bottom: 1em;
+
+    &:first-child {
+      margin-top: 2em;
+    }
+  }
+
+  p {
+    margin: 0 auto 3em auto;
+    font-size: 1.2em;
+    line-height: 1.5em;
+    width: 80%;
+  }
+}
+
+.directors {
+  margin-top: 2em;
+  list-style-type: none;
+
+  .title {
+    text-transform: uppercase;
+    font-weight: 700;
+    font-size: 1.5em;
+    letter-spacing: 0.1em;
+    line-height: 1.5em;
+  }
+
+  li {
+    font-size: 1.2em;
+    line-height: 1.6em;
+  }
+}
+
+.photo-divider {
+  background-size: cover;
+  margin: 6em 0;
+  height: 540px;
+}
+
+#about-us-divider {
+  background: url("../../img/our-story-photo-divider.jpg") top center;
+}
+
+#our-mission-divider {
+  background: url("../../img/our-story-photo-divider-2.jpg") top center;
+}
+
+.quote {
+  h3 {
+    font-size: 2em;
+    width: 60%;
+    line-height: 1.4em;
+    color: $pink;
+    text-align: center;
+    font-weight: normal;
+    margin: 0 auto;
+  }
+
+  h6 {
+    font-size: 16px;
+    text-align: center;
+    text-transform: uppercase;
+    margin-top: 20px;
+    font-style: italic;
+    font-weight: bold;
+  }
+}
+
+#quote-button {
+  background: $yellow;
+  color: $white;
+  margin: 0 auto 5em auto;
+  font-size: 1em;
+  width: 300px;
+
+  &:hover {
+    color: $black;
+  }
+}
+
+#learn-more {
+  width: 85%;
+  margin: 0 auto;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-gap: 2em;
+}
+
+.learn-item {
+  height: 100%;
+  position: relative;
+
+  h3 {
+    font-weight: 700;
+    font-size: 1.5em;
+    margin-top: 1em;
+    text-transform: uppercase;
+  }
+
+  p {
+    width: 90% !important;
+    font-size: 1em;
+    text-align: left;
+    padding-bottom: 2em;
+  }
+
+  .btn-yellow {
+    position: absolute;
+    bottom: 0;
+    color: $white;
+    font-size: 1.3em;
+    width: 80%;
+    margin-left: 5%;
+
+    &:hover {
+      color: $black;
+    }
+  }
+}
