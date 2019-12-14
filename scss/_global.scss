@@ -48,3 +48,12 @@ body {
     margin: 0 auto 3em auto;
   }
 }
+
+@media only screen and (max-width: $medium) {
+  .internal-container {
+    p.intro-copy {
+      width: 100%;
+      font-size: 1.2em;
+    }
+  }
+}
