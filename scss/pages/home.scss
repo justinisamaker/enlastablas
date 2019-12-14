@@ -192,3 +192,47 @@
     margin-top: 2em;
   }
 }
+
+/* MEDIA QUERIES ===== */
+@media only screen and (max-width: $large) {
+  #hero {
+    h2 {
+      top: 60%;
+    }
+  }
+
+  #homepage-box-links {
+    grid-template-columns: 1fr;
+  }
+
+  #events-social {
+    grid-template-columns: 1fr;
+  }
+}
+
+@media only screen and (max-width: $medium) {
+  #hero {
+    h2 {
+      top: 50%;
+      font-size: 2em;
+    }
+  }
+
+  .box-link {
+    padding: 3em;
+  }
+
+  #testimonials {
+    h3 {
+      font-size: 1em;
+    }
+
+    h4 {
+      font-size: 1.5em;
+    }
+  }
+
+  #events-social {
+    padding: 40px 0;
+  }
+}
