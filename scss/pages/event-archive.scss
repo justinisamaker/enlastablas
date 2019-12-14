@@ -8,6 +8,7 @@
 .event {
   display: grid;
   grid-template-columns: 20% 1fr 20%;
+  grid-template-areas: "date info link";
   grid-gap: 3em;
   padding-top: 2em;
   padding-bottom: 2em;
@@ -27,11 +28,21 @@
 }
 
 .event-date {
+  grid-area: date;
   border-right: 1px solid $gray1;
+  padding-right: 2em;
   h2 {
     text-align: center;
     color: $gray3;
   }
+}
+
+.event-info {
+  grid-area: info;
+}
+
+.event-link {
+  grid-area: link;
 }
 
 .event-link a {
@@ -48,5 +59,37 @@
     font-weight: 700;
     margin-bottom: 0.1em;
     text-align: center;
+  }
+}
+
+/* MEDIA QUERIES ===== */
+@media only screen and (max-width: $large) {
+  .event {
+    grid-template-columns: 30% 1fr 30%;
+  }
+}
+
+@media only screen and (max-width: $medium) {
+  .event {
+    grid-template-columns: 1fr;
+    grid-template-rows: repeat(3, 1fr);
+    border-bottom: 1px solid $gray1;
+    grid-gap: 0;
+    grid-template-areas:
+      "info"
+      "date"
+      "link";
+  }
+
+  .event-date {
+    border: 0;
+
+    h2 {
+      text-align: left;
+      font-size: 1.2em;
+      line-height: 1.3em;
+      font-weight: 700;
+      color: $darkGray;
+    }
   }
 }
