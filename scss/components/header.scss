@@ -58,6 +58,13 @@
     &:last-child a {
       padding-right: 0;
     }
+
+    &.current-menu-item {
+      a {
+        border-bottom: 2px solid $white;
+        transition: color 0.1s ease-in-out;
+      }
+    }
   }
 }
 
