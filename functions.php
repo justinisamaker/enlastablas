@@ -34,7 +34,9 @@
     if(is_front_page()){
       wp_enqueue_style( 'home_css',
         get_template_directory_uri().'/css/pages/home.css');
-    } else if( is_post_type_archive('class') ){
+    } else if( is_post_type_archive('testimonial') ){
+      wp_enqueue_style( 'testimonial_archive_css', get_template_directory_uri() . '/css/pages/testimonial-archive.css');
+    }   else if( is_post_type_archive('class') ){
       wp_enqueue_style( 'class_archive_css', get_template_directory_uri() . '/css/pages/class-archive.css');
     }  else if( is_singular('class') ){
       wp_enqueue_style( 'class_single_css', get_template_directory_uri() . '/css/pages/class-single.css');

@@ -1,0 +1,28 @@
+@import "../utils.scss";
+
+#testimonials-list {
+  width: 85%;
+  margin: 0 auto;
+
+  li {
+    padding: 2.5em;
+    border-bottom: 1px solid $gray2;
+    text-align: center;
+
+    &:last-child {
+      border-bottom: 1px solid $gray2;
+    }
+  }
+
+  h2 {
+    font-size: 1.5em;
+    font-weight: 400;
+    line-height: 1.3em;
+  }
+
+  h5 {
+    font-style: italic;
+    font-size: 20px;
+    margin: 20px 0 0 0;
+  }
+}
