@@ -36,6 +36,8 @@
         get_template_directory_uri().'/css/pages/home.css');
     } else if( is_post_type_archive('class') ){
       wp_enqueue_style( 'class_archive_css', get_template_directory_uri() . '/css/pages/class-archive.css');
+    }  else if( is_singular('class') ){
+      wp_enqueue_style( 'class_single_css', get_template_directory_uri() . '/css/pages/class-single.css');
     } else if( is_page_template('page-our-story.php') ){
       wp_enqueue_style( 'our_story_css', get_template_directory_uri() . '/css/pages/our-story.css');
     } else if( is_page_template('page-support-us.php') ){

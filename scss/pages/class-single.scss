@@ -1,0 +1,66 @@
+@import "../utils.scss";
+
+#single-class-container {
+  width: 85%;
+  margin: 5em auto;
+}
+
+#class-info {
+  display: grid;
+  grid-template-columns: 60% 40%;
+  margin-bottom: 3em;
+}
+
+#class-description {
+  padding-right: 3em;
+
+  h1 {
+    color: $blue;
+    font-size: 2em;
+    margin-top: 0;
+    margin-bottom: 1em;
+    text-align: left;
+  }
+
+  p {
+    font-size: 1.3em;
+    line-height: 1.5em;
+    margin-bottom: 1em;
+  }
+
+  span {
+    color: $pink;
+  }
+}
+
+.default-table {
+  width: 100%;
+  margin-top: 5em;
+
+  thead {
+    background: $pink;
+    color: $white;
+    font-size: 1.4em;
+
+    th {
+      padding: 10px 20px;
+    }
+  }
+
+  .labels {
+    border-bottom: 1px solid $black;
+    td {
+      font-size: 1.4em;
+      padding: 1em;
+    }
+  }
+
+  .default-single-listing {
+    td {
+      padding: 13px 5px 13px 20px;
+    }
+    &:nth-child(odd) {
+      background: $gray1;
+    }
+  }
+}
