@@ -25,7 +25,7 @@
 
   // Custom Styles
   function adobo_theme_styles(){
-    wp_enqueue_style( 'normalize_css', get_template_directory_uri().'/css/components/normalize.css');
+    wp_enqueue_style( 'reset_css', get_template_directory_uri().'/css/components/reset.css');
 
     wp_enqueue_style( 'header_css', get_template_directory_uri().'/css/components/header.css');
 
@@ -38,6 +38,8 @@
       wp_enqueue_style( 'class_archive_css', get_template_directory_uri() . '/css/pages/class-archive.css');
     } else if( is_page_template('page-our-story.php') ){
       wp_enqueue_style( 'our_story_css', get_template_directory_uri() . '/css/pages/our-story.css');
+    } else if( is_post_type_archive('event') ){
+      wp_enqueue_style( 'event_archive_css', get_template_directory_uri() . '/css/pages/event-archive.css');
     }
   }
 
