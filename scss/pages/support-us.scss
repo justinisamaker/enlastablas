@@ -1,0 +1,43 @@
+@import "../utils.scss";
+
+.support-section {
+  width: 70%;
+  margin: 0 auto 4em auto;
+  display: grid;
+  grid-template-columns: 70% 30%;
+  grid-column-gap: 3em;
+  line-height: 1.3em;
+
+  h2 {
+    font-size: 1.4em;
+    line-height: 1.6em;
+  }
+
+  h3 {
+    line-height: 1.5em;
+    margin-bottom: 5px;
+    color: $pink;
+  }
+
+  p,
+  ul {
+    line-height: 1.5em;
+    margin-bottom: 10px;
+  }
+
+  ul {
+    list-style-type: square;
+    li {
+      margin-left: 4em;
+    }
+  }
+
+  .btn-yellow {
+    margin: 20px 0 0 0;
+    padding: 20px 60px;
+  }
+
+  #one-time-gift {
+    margin-top: 47px;
+  }
+}
