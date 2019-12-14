@@ -1,6 +1,6 @@
 # Adobo WordPress Theme
 
-This is a custom theme developed for En las Tablas Performing Arts, an arts non-profit located in Chicago, IL. Originally developed for team Critical Mass during the Nerdery's Overnight Website Challenge in January of 2016, rewritten in December of 2019.
+This is a custom theme developed for En las Tablas Performing Arts, an arts non-profit located in Chicago, IL. Originally developed for team Critical Mass during the Nerdery's Overnight Website Challenge in January of 2015, rewritten in December of 2019.
 
 ### Working with SCSS in this Repo
 
