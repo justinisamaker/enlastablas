@@ -25,6 +25,9 @@ body {
 }
 
 .internal-container {
+  width: 85%;
+  margin: 0 auto;
+
   h1 {
     text-align: center;
     @include open-sans;
