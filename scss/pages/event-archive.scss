@@ -1,0 +1,53 @@
+@import "../utils.scss";
+
+#events-list {
+  border-top: 1px solid $gray1;
+  width: 85%;
+  margin: 0 auto;
+  list-style-type: none;
+}
+
+.event {
+  display: grid;
+  grid-template-columns: 20% 1fr 20%;
+  grid-gap: 3em;
+  padding-top: 2em;
+  padding-bottom: 2em;
+
+  h2 {
+    line-height: 1.3em;
+    font-size: 1.5em;
+    font-weight: 700;
+    margin-bottom: 0.1em;
+  }
+
+  h3 {
+    font-size: 1.2em;
+    line-height: 1.3em;
+  }
+}
+
+.event-date {
+  border-right: 1px solid $gray1;
+  h2 {
+    text-align: center;
+    color: $gray3;
+  }
+}
+
+.event-link a {
+  margin-top: 0.5em;
+}
+
+.no-events {
+  padding-top: 2em;
+  padding-bottom: 2em;
+
+  h2 {
+    line-height: 1.3em;
+    font-size: 1.5em;
+    font-weight: 700;
+    margin-bottom: 0.1em;
+    text-align: center;
+  }
+}
