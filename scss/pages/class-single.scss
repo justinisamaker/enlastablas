@@ -63,3 +63,22 @@
     }
   }
 }
+
+/* MEDIA QUERIES ===== */
+@media only screen and (max-width: $large) {
+  #class-info {
+    grid-template-columns: 1fr;
+  }
+
+  img {
+    margin-top: 1em;
+  }
+}
+
+@media only screen and (max-width: $medium) {
+  .default-table {
+    overflow-x: scroll;
+    display: block;
+    white-space: nowrap;
+  }
+}
